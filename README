@@ -1,0 +1,135 @@
+libgnomekbd
+------------------------------------------
+GNOME keyboard configuration library providing:
+- keyboard configuration persistence (over GConf).
+- keyboard configuration registry, client and server parts (using DBUS).
+- keyboard indicator widget (can be used in any GNOME application).
+- keyboard layout indication widget (can be used in any GNOME application).
+
+Runtime requirements:
+  cygwin-1.5.24-2
+  GConf2-2.16.1-1
+  gdk-pixbuf2-2.10.12-1
+  glib2-2.12.12-1
+  gtk2-x11-2.10.12-1
+  libX11_6-1.1.1-1
+  libcairo2-1.4.6-1
+  libdbus-glib_1_2-0.73-1
+  libglade2-2.6.0-1
+  libgnome2-2.16.0-1
+  libgnomeui2-2.16.1-1
+  libintl8-0.15-1
+  libxklavier11-3.2-1
+  pango-1.16.4-1
+
+Build requirements:
+(besides corresponding -devel packages)
+  cygwin-1.5.24-2
+  autoconf2.5-2.61-1
+  automake1.9-1.9.6-2
+  binutils-20060817-1
+  bison-2.3-1
+  cygport-0.2.9-1
+  flex-2.5.33-1
+  gawk-3.1.5-4
+  gcc-core-3.4.4-3
+  gtk-doc-1.7-1
+  intltool-0.35.4-1
+  libtool1.5-1.5.23a-2
+  make-3.81-1
+  pkg-config-0.21-1
+  sed-4.1.5-2
+
+Canonical website:
+  http://www.gnome.org/
+
+Canonical download:
+  ftp://ftp.gnome.org/pub/gnome/sources/libgnomekbd/
+
+-------------------------------------------
+
+Build instructions:
+  unpack libgnomekbd-2.18.2-X-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./libgnomekbd-2.18.2-X.cygport all
+
+This will create:
+  /usr/src/libgnomekbd-2.18.2-X-src.tar.bz2
+  /usr/src/libgnomekbd-2.18.2-X.tar.bz2
+  /usr/src/libgnomekbd-devel-2.18.2-X.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary packages:
+
+(libgnomekbd)
+  /etc/gconf/schemas/desktop_gnome_peripherals_keyboard_xkb.schemas
+  /etc/postinstall/libgnomekbd.sh
+  /etc/preremove/libgnomekbd.sh
+  /usr/bin/cyggnomekbd-1.dll
+  /usr/bin/cyggnomekbdui-1.dll
+  /usr/bin/gkbd-indicator-plugins-capplet.exe
+  /usr/share/applications/gkbd-indicator-plugins-capplet.desktop
+  /usr/share/doc/Cygwin/libgnomekbd-2.18.2.README
+  /usr/share/doc/libgnomekbd-2.18.2/AUTHORS
+  /usr/share/doc/libgnomekbd-2.18.2/COPYING.LIB
+  /usr/share/doc/libgnomekbd-2.18.2/ChangeLog
+  /usr/share/doc/libgnomekbd-2.18.2/INSTALL
+  /usr/share/doc/libgnomekbd-2.18.2/NEWS
+  /usr/share/icons/hicolor/48x48/apps/gkbd-indicator-plugins-capplet.png
+  /usr/share/libgnomekbd/glade/gkbd-indicator-plugins.glade
+  /usr/share/locale/ar/LC_MESSAGES/libgnomekbd.mo
+  /usr/share/locale/be@latin/LC_MESSAGES/libgnomekbd.mo
+  /usr/share/locale/bg/LC_MESSAGES/libgnomekbd.mo
+  /usr/share/locale/ca/LC_MESSAGES/libgnomekbd.mo
+  /usr/share/locale/da/LC_MESSAGES/libgnomekbd.mo
+  /usr/share/locale/dz/LC_MESSAGES/libgnomekbd.mo
+  /usr/share/locale/el/LC_MESSAGES/libgnomekbd.mo
+  /usr/share/locale/en_GB/LC_MESSAGES/libgnomekbd.mo
+  /usr/share/locale/es/LC_MESSAGES/libgnomekbd.mo
+  /usr/share/locale/fr/LC_MESSAGES/libgnomekbd.mo
+  /usr/share/locale/gl/LC_MESSAGES/libgnomekbd.mo
+  /usr/share/locale/gu/LC_MESSAGES/libgnomekbd.mo
+  /usr/share/locale/hu/LC_MESSAGES/libgnomekbd.mo
+  /usr/share/locale/it/LC_MESSAGES/libgnomekbd.mo
+  /usr/share/locale/ja/LC_MESSAGES/libgnomekbd.mo
+  /usr/share/locale/ko/LC_MESSAGES/libgnomekbd.mo
+  /usr/share/locale/lt/LC_MESSAGES/libgnomekbd.mo
+  /usr/share/locale/mk/LC_MESSAGES/libgnomekbd.mo
+  /usr/share/locale/nb/LC_MESSAGES/libgnomekbd.mo
+  /usr/share/locale/pa/LC_MESSAGES/libgnomekbd.mo
+  /usr/share/locale/pt/LC_MESSAGES/libgnomekbd.mo
+  /usr/share/locale/pt_BR/LC_MESSAGES/libgnomekbd.mo
+  /usr/share/locale/ru/LC_MESSAGES/libgnomekbd.mo
+  /usr/share/locale/sv/LC_MESSAGES/libgnomekbd.mo
+  /usr/share/locale/uk/LC_MESSAGES/libgnomekbd.mo
+
+(libgnomekbd-devel)
+  /usr/include/libgnomekbd/gkbd-config-registry-client.h
+  /usr/include/libgnomekbd/gkbd-config-registry.h
+  /usr/include/libgnomekbd/gkbd-desktop-config.h
+  /usr/include/libgnomekbd/gkbd-indicator-config.h
+  /usr/include/libgnomekbd/gkbd-indicator-plugin.h
+  /usr/include/libgnomekbd/gkbd-indicator.h
+  /usr/include/libgnomekbd/gkbd-keyboard-config.h
+  /usr/include/libgnomekbd/gkbd-keyboard-drawing.h
+  /usr/include/libgnomekbd/gkbd-util.h
+  /usr/lib/libgnomekbd.dll.a
+  /usr/lib/libgnomekbd.la
+  /usr/lib/libgnomekbdui.dll.a
+  /usr/lib/libgnomekbdui.la
+  /usr/lib/pkgconfig/libgnomekbd.pc
+  /usr/lib/pkgconfig/libgnomekbdui.pc
+
+------------------
+
+Port Notes:
+
+----- version 2.18.2-1 -----
+Initial release for Cygwin.
+
+
+Cygwin port maintained by:
+http://cygwinports.dotsrc.org/

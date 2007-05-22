@@ -1,0 +1,8 @@
+category: Gnome
+requires: cygwin GConf2 gdk-pixbuf2 glib2 gtk2-x11 libX11_6 libcairo2 libdbus-glib_1_2 libglade2 libgnome2 libgnomeui2 libintl8 libxklavier11 pango
+sdesc: "GNOME keyboard configuration library (runtime)"
+ldesc: "GNOME keyboard configuration library providing:
+- keyboard configuration persistence (over GConf).
+- keyboard configuration registry, client and server parts (using DBUS).
+- keyboard indicator widget (can be used in any GNOME application).
+- keyboard layout indication widget (can be used in any GNOME application)."
