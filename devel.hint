@@ -1,5 +1,5 @@
 category: Gnome
-requires: cygwin GConf2-devel glib2-devel gtk2-x11-devel libX11-devel libcairo-devel libdbus-glib_1-devel libglade2-devel libgnome2-devel gettext libxklavier-devel pango-devel
+requires: cygwin GConf2-devel glib2-devel gdk-pixbuf2-devel gtk2-x11-devel libX11-devel libcairo-devel libdbus-glib_1-devel libglade2-devel libgnome2-devel gettext libxklavier-devel pango-devel
 external-source: libgnomekbd
 sdesc: "GNOME keyboard configuration library (development)"
 ldesc: "GNOME keyboard configuration library providing:
