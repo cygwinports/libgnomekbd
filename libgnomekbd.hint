@@ -1,0 +1,8 @@
+category: Gnome
+requires: cygwin GConf2 libgconf2_4 libglade2.0_0 libglib2.0_0 libgnomekbd3 libgtk2.0_0 libintl8 libxklavier12
+sdesc: "GNOME keyboard configuration applet"
+ldesc: "GNOME keyboard configuration library providing:
+- keyboard configuration persistence (over GConf).
+- keyboard configuration registry, client and server parts (using DBUS).
+- keyboard indicator widget (can be used in any GNOME application).
+- keyboard layout indication widget (can be used in any GNOME application)."

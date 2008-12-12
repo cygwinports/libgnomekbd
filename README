@@ -7,20 +7,17 @@ GNOME keyboard configuration library providing:
 - keyboard layout indication widget (can be used in any GNOME application).
 
 Runtime requirements:
-  cygwin-1.5.25-11
-  GConf2-2.22.0-1
-  gdk-pixbuf2-2.12.9-1
-  glib2-2.16.3-1
-  gtk2-x11-2.12.9-1
-  libX11_6-1.1.3-1
-  libcairo2-1.6.4-1
-  libdbus-glib_1_2-0.74-1
-  libglade2-2.6.2-1
-  libgnome2-2.22.0-1
-  libgnomeui2-2.22.1-1
-  libintl8-0.15-1
-  libxklavier12-3.6-1
-  pango-1.20.3-1
+  cygwin-1.5.25-15
+  libcairo2-1.8.4-1
+  libgconf2_4-2.24.0-1
+  libgdk_pixbuf2.0_0-2.14.5-1
+  libglade2.0_0-2.6.3-2
+  libglib2.0_0-2.18.3-1
+  libgtk2.0_0-2.14.5-1
+  libintl8-0.17-2
+  libpango1.0_0-1.22.3-1
+  libX11_6-1.1.5-1
+  libxklavier12-3.8-1
 
 Build requirements:
 (besides corresponding -devel packages)
@@ -47,16 +44,17 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack libgnomekbd-2.22.0-X-src.tar.bz2
+  unpack libgnomekbd-2.24.0-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./libgnomekbd-2.22.0-X.cygport all
+  cygport ./libgnomekbd-2.24.0-X.cygport all
 
 This will create:
-  /usr/src/libgnomekbd-2.22.0-X-src.tar.bz2
-  /usr/src/libgnomekbd-2.22.0-X.tar.bz2
-  /usr/src/libgnomekbd-devel-2.22.0-X.tar.bz2
+  /usr/src/libgnomekbd-2.24.0-X-src.tar.bz2
+  /usr/src/libgnomekbd-2.24.0-X.tar.bz2
+  /usr/src/libgnomekbd-devel-2.24.0-X.tar.bz2
+  /usr/src/libgnomekbd3-2.24.0-X.tar.bz2
 
 -------------------------------------------
 
@@ -66,15 +64,13 @@ Files included in the binary packages:
   /etc/gconf/schemas/desktop_gnome_peripherals_keyboard_xkb.schemas
   /etc/postinstall/libgnomekbd.sh
   /etc/preremove/libgnomekbd.sh
-  /usr/bin/cyggnomekbd-2.dll
-  /usr/bin/cyggnomekbdui-2.dll
   /usr/bin/gkbd-indicator-plugins-capplet.exe
   /usr/share/applications/gkbd-indicator-plugins-capplet.desktop
-  /usr/share/doc/libgnomekbd-2.22.0/AUTHORS
-  /usr/share/doc/libgnomekbd-2.22.0/COPYING.LIB
-  /usr/share/doc/libgnomekbd-2.22.0/ChangeLog
-  /usr/share/doc/libgnomekbd-2.22.0/INSTALL
-  /usr/share/doc/libgnomekbd-2.22.0/NEWS
+  /usr/share/doc/libgnomekbd-2.24.0/AUTHORS
+  /usr/share/doc/libgnomekbd-2.24.0/COPYING.LIB
+  /usr/share/doc/libgnomekbd-2.24.0/ChangeLog
+  /usr/share/doc/libgnomekbd-2.24.0/INSTALL
+  /usr/share/doc/libgnomekbd-2.24.0/NEWS
   /usr/share/libgnomekbd/glade/gkbd-indicator-plugins.glade
   /usr/share/locale/ar/LC_MESSAGES/libgnomekbd.mo
   /usr/share/locale/be@latin/LC_MESSAGES/libgnomekbd.mo
@@ -95,6 +91,7 @@ Files included in the binary packages:
   /usr/share/locale/gl/LC_MESSAGES/libgnomekbd.mo
   /usr/share/locale/gu/LC_MESSAGES/libgnomekbd.mo
   /usr/share/locale/he/LC_MESSAGES/libgnomekbd.mo
+  /usr/share/locale/hi/LC_MESSAGES/libgnomekbd.mo
   /usr/share/locale/hu/LC_MESSAGES/libgnomekbd.mo
   /usr/share/locale/it/LC_MESSAGES/libgnomekbd.mo
   /usr/share/locale/ja/LC_MESSAGES/libgnomekbd.mo
@@ -118,9 +115,10 @@ Files included in the binary packages:
   /usr/share/locale/sl/LC_MESSAGES/libgnomekbd.mo
   /usr/share/locale/sq/LC_MESSAGES/libgnomekbd.mo
   /usr/share/locale/sr/LC_MESSAGES/libgnomekbd.mo
-  /usr/share/locale/sr@Latn/LC_MESSAGES/libgnomekbd.mo
+  /usr/share/locale/sr@latin/LC_MESSAGES/libgnomekbd.mo
   /usr/share/locale/sv/LC_MESSAGES/libgnomekbd.mo
   /usr/share/locale/ta/LC_MESSAGES/libgnomekbd.mo
+  /usr/share/locale/te/LC_MESSAGES/libgnomekbd.mo
   /usr/share/locale/th/LC_MESSAGES/libgnomekbd.mo
   /usr/share/locale/tr/LC_MESSAGES/libgnomekbd.mo
   /usr/share/locale/uk/LC_MESSAGES/libgnomekbd.mo
@@ -128,6 +126,10 @@ Files included in the binary packages:
   /usr/share/locale/zh_CN/LC_MESSAGES/libgnomekbd.mo
   /usr/share/locale/zh_HK/LC_MESSAGES/libgnomekbd.mo
   /usr/share/locale/zh_TW/LC_MESSAGES/libgnomekbd.mo
+
+(libgnomekbd3)
+  /usr/bin/cyggnomekbd-3.dll
+  /usr/bin/cyggnomekbdui-3.dll
 
 (libgnomekbd-devel)
   /usr/include/libgnomekbd/gkbd-desktop-config.h
@@ -147,6 +149,9 @@ Files included in the binary packages:
 ------------------
 
 Port Notes:
+
+----- version 2.24.0-1 -----
+Version bump for GNOME 2.24.
 
 ----- version 2.22.0-1 -----
 Version bump for GNOME 2.22.
