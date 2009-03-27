@@ -7,32 +7,33 @@ GNOME keyboard configuration library providing:
 - keyboard layout indication widget (can be used in any GNOME application).
 
 Runtime requirements:
-  cygwin-1.5.25-15
-  libcairo2-1.8.4-1
-  libgconf2_4-2.24.0-1
-  libgdk_pixbuf2.0_0-2.14.5-1
-  libglade2.0_0-2.6.3-2
-  libglib2.0_0-2.18.3-1
-  libgtk2.0_0-2.14.5-1
-  libintl8-0.17-2
-  libpango1.0_0-1.22.3-1
-  libX11_6-1.1.5-1
-  libxklavier12-3.8-1
+  cygwin-1.7.0-44
+  libcairo2-1.8.6-10
+  libgcc1-4.3.2-2
+  libgconf2_4-2.26.0-1
+  libgdk_pixbuf2.0_0-2.16.0-1
+  libglade2.0_0-2.6.4-1
+  libglib2.0_0-2.20.0-1
+  libgtk2.0_0-2.16.0-1
+  libintl8-0.17-10
+  libpango1.0_0-1.24.0-1
+  libX11_6-1.2-10
+  libxklavier12-3.9-1
 
 Build requirements:
 (besides corresponding -devel packages)
-  autoconf2.5-2.61-1
-  automake1.9-1.9.6-2
-  binutils-20060817-1
-  cygport-0.3.11-1
-  gawk-3.1.6-1
-  gcc-core-3.4.4-3
-  gettext-devel-0.15-1
-  gnome-common-2.20.0-2
-  intltool-0.37.1-1
-  libtool-2.2.2-2
-  make-3.81-1
-  pkg-config-0.21-1
+  autoconf2.5-2.63-10
+  automake1.9-1.9.6-10
+  binutils-20080624-2
+  cygport-0.9.6-1
+  gawk-3.1.6-2
+  gcc4-core-4.3.2-2
+  gettext-devel-0.17-10
+  gnome-common-2.26.0-1
+  intltool-0.40.6-1
+  libtool-2.2.6a-2
+  make-3.81-2
+  pkg-config-0.23a-2
   sed-4.1.5-2
 
 Canonical website:
@@ -44,17 +45,17 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack libgnomekbd-2.24.0-X-src.tar.bz2
+  unpack libgnomekbd-2.26.0-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./libgnomekbd-2.24.0-X.cygport all
+  cygport ./libgnomekbd-2.26.0-X.cygport all
 
 This will create:
-  /usr/src/libgnomekbd-2.24.0-X-src.tar.bz2
-  /usr/src/libgnomekbd-2.24.0-X.tar.bz2
-  /usr/src/libgnomekbd-devel-2.24.0-X.tar.bz2
-  /usr/src/libgnomekbd3-2.24.0-X.tar.bz2
+  /usr/src/libgnomekbd-2.26.0-X-src.tar.bz2
+  /usr/src/libgnomekbd-2.26.0-X.tar.bz2
+  /usr/src/libgnomekbd-devel-2.26.0-X.tar.bz2
+  /usr/src/libgnomekbd3-2.26.0-X.tar.bz2
 
 -------------------------------------------
 
@@ -66,11 +67,10 @@ Files included in the binary packages:
   /etc/preremove/libgnomekbd.sh
   /usr/bin/gkbd-indicator-plugins-capplet.exe
   /usr/share/applications/gkbd-indicator-plugins-capplet.desktop
-  /usr/share/doc/libgnomekbd-2.24.0/AUTHORS
-  /usr/share/doc/libgnomekbd-2.24.0/COPYING.LIB
-  /usr/share/doc/libgnomekbd-2.24.0/ChangeLog
-  /usr/share/doc/libgnomekbd-2.24.0/INSTALL
-  /usr/share/doc/libgnomekbd-2.24.0/NEWS
+  /usr/share/doc/libgnomekbd/AUTHORS
+  /usr/share/doc/libgnomekbd/COPYING.LIB
+  /usr/share/doc/libgnomekbd/ChangeLog
+  /usr/share/doc/libgnomekbd/NEWS
   /usr/share/libgnomekbd/glade/gkbd-indicator-plugins.glade
   /usr/share/locale/ar/LC_MESSAGES/libgnomekbd.mo
   /usr/share/locale/be@latin/LC_MESSAGES/libgnomekbd.mo
@@ -150,17 +150,8 @@ Files included in the binary packages:
 
 Port Notes:
 
------ version 2.24.0-1 -----
-Version bump for GNOME 2.24.
-
------ version 2.22.0-1 -----
-Version bump for GNOME 2.22.
-
------ version 2.20.0-1 -----
-Version bump for GNOME 2.20.
-
------ version 2.18.2-1 -----
-Initial release for Cygwin.
+----- version 2.26.0-1 -----
+Initial release of GNOME 2.26 for Cygwin 1.7.
 
 
 Cygwin port maintained by:
