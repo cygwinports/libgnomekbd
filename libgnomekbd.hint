@@ -1,5 +1,5 @@
 category: Gnome
-requires: GConf2 libgcc1 libgconf2_4 libglade2.0_0 libglib2.0_0 libgnomekbd3 libgtk2.0_0 libintl8 libxklavier12
+requires: GConf2 libgcc1 libgconf2_4 libglib2.0_0 libgnomekbd4 libgtk2.0_0 libintl8 libxklavier15
 sdesc: "GNOME keyboard configuration applet"
 ldesc: "GNOME keyboard configuration library providing:
 - keyboard configuration persistence (over GConf).
