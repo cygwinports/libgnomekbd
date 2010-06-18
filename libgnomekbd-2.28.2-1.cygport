@@ -1,8 +1,0 @@
-inherit gnome2
-
-DESCRIPTION="GNOME keyboard configuration library"
-
-PKG_NAMES="${PN} ${PN}4 ${PN}-devel"
-libgnomekbd_CONTENTS='etc/ usr/bin/*.exe usr/share/'
-libgnomekbd4_CONTENTS="usr/bin/*-4.dll"
-libgnomekbd_devel_CONTENTS='usr/include/ usr/lib/'

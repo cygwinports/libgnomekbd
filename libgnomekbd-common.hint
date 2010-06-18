@@ -1,7 +1,7 @@
 category: Gnome
-requires: libgnomekbd-common libcairo2 libgcc1 libgconf2_4 libgdk_pixbuf2.0_0 libglib2.0_0 libgtk2.0_0 libintl8 libpango1.0_0 libX11_6 libxklavier16
+requires: GConf2
 external-source: libgnomekbd
-sdesc: "GNOME keyboard configuration library (runtime)"
+sdesc: "GNOME keyboard configuration library (data)"
 ldesc: "GNOME keyboard configuration library providing:
 - keyboard configuration persistence (over GConf).
 - keyboard configuration registry, client and server parts (using DBUS).
