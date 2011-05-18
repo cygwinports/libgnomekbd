@@ -1,5 +1,5 @@
 category: Gnome
-requires: GConf2
+requires:
 external-source: libgnomekbd
 sdesc: "GNOME keyboard configuration library (data)"
 ldesc: "GNOME keyboard configuration library providing:
