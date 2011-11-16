@@ -2,6 +2,11 @@ inherit gnome2
 
 DESCRIPTION="GNOME keyboard configuration library"
 
+DEPEND="gnome-common
+	girepository(Gtk-3.0)
+	pkgconfig(gtk+-3.0)
+	pkgconfig(libxklavier)"
+
 PKG_NAMES="${PN} ${PN}7 ${PN}-common ${PN}-devel girepository-Gkbd3.0"
 libgnomekbd_CONTENTS="usr/bin/*.exe usr/share/applications/ usr/share/${PN}/"
 libgnomekbd7_CONTENTS="usr/bin/*-7.dll"
