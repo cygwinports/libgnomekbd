@@ -1,9 +1,0 @@
-category: Gnome
-requires: libgnomekbd7 girepository-Gtk3.0
-external-source: libgnomekbd
-sdesc: "GNOME keyboard configuration library (GObject Introspection data)"
-ldesc: "GNOME keyboard configuration library providing:
-- keyboard configuration persistence (over GConf).
-- keyboard configuration registry, client and server parts (using DBUS).
-- keyboard indicator widget (can be used in any GNOME application).
-- keyboard layout indication widget (can be used in any GNOME application)."
